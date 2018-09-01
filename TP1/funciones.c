@@ -8,7 +8,7 @@ void dividir(float* pOperador1, float* pOperador2);
 
 /*
 
-/////NO TE OLVIDES DE HACER EL ARCHIVO CON LOS HEADERSSSS!!!!
+/////NO TE OLVIDES DE HACER EL ARCHIVO CON LOS HEADERSSSS!!!!//
 
 */
 void sumar(int* pOperador1, int* pOperador2){
