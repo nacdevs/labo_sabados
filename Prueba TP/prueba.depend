@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1535817548 source:/home/profesor/Ernesto/LABO1/Clase04/prueba/main.c
+	<stdio.h>
+	<stdlib.h>
+	"math.h"
+
+1535817513 /home/profesor/Ernesto/LABO1/Clase04/prueba/math.h
+
