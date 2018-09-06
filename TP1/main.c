@@ -8,9 +8,7 @@ int main()
     int primerOperando;
     int segundoOperando;
 
-    printf("Ingresar 1er operando\n");
-    scanf("%d", &primerOperando);
-    printf("Ingresar 2do operando\n");
+    printf("Ing
     scanf("%d", &segundoOperando);
 
     dividir(&primerOperando,&segundoOperando);

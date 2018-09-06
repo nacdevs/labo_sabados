@@ -13,17 +13,12 @@ void dividir(float* pOperador1, float* pOperador2);
 */
 void sumar(int* pOperador1, int* pOperador2){
  int operador1 = *pOperador1;
- int operador2 = *pOperador2;
- int suma = operador1+operador2;
- printf("La suma es %d \n", suma);
+ int operador2 = *pOperado
 }
 
 void restar(float* pOperador1, float* pOperador2){
     float operador1 = *pOperador1;
-    float operador2 = *pOperador2;
-
-    float resta = operador1-operador2;
-    printf("La resta es %f \n", resta);
+    float oper
 
 }
 
@@ -31,25 +26,6 @@ void multiplicar(float* pOperador1, float* pOperador2){
 
     float operador1 = *pOperador1;
     float operador2 = *pOperador2;
-
-    float multiplicar = operador1*operador2;
-    printf("La multiplicacion es %f \n", multiplicar);
-}
-
-void dividir(float* pOperador1, float* pOperador2){
-
-    int retorno;
-    float operador1 = *pOperador1;
-    float operador2 = *pOperador2;
-
-    if(operador2==0){
-        printf("El segundo operador no pueden ser cero");
-        retorno=-1;
-    }else{
-        float dividir = operador1/operador2;
-       printf("La division es %.2f \n", dividir);
-    }
-
 
 
 }
