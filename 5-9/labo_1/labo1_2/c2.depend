@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1535591702 source:/home/alumno/c2/main.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+
+1535677652 source:/home/alumno/Nestor/labo_1/labo1_2/main.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	"utn.h"
+
+1535677668 /home/alumno/Nestor/labo_1/labo1_2/utn.h
+
+1535678789 source:/home/alumno/Nestor/labo_1/labo1_2/utn.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	"utn.h"
+
+1535689464 source:c:\users\nest\documents\utn\labo1\labo_1\labo1_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1535685402 c:\users\nest\documents\utn\labo1\labo_1\labo1_2\utn.h
+
+1535690159 source:c:\users\nest\documents\utn\labo1\labo_1\labo1_2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1536196635 source:/home/alumno/Nestor/5-9/labo_1/labo1_2/main.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	"utn.h"
+
+1536196427 /home/alumno/Nestor/5-9/labo_1/labo1_2/utn.h
+
+1536188193 source:/home/alumno/Nestor/5-9/labo_1/labo1_2/utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1536272642 source:/home/alumno/aaa/labo_sabados/5bis/labo_1/labo1_2/main.c
+	<stdio.h>
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+
+1536196427 /home/alumno/aaa/labo_sabados/5bis/labo_1/labo1_2/utn.h
+
+1536273104 source:/home/alumno/aaa/labo_sabados/5bis/labo_1/labo1_2/utn.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
