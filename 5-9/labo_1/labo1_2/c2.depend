@@ -43,7 +43,7 @@
 	<stdlib.h>
 	"utn.h"
 
-1536272642 source:/home/alumno/aaa/labo_sabados/5bis/labo_1/labo1_2/main.c
+1536283569 source:/home/alumno/aaa/labo_sabados/5bis/labo_1/labo1_2/main.c
 	<stdio.h>
 	<stdio_ext.h>
 	<string.h>
@@ -52,8 +52,9 @@
 
 1536196427 /home/alumno/aaa/labo_sabados/5bis/labo_1/labo1_2/utn.h
 
-1536273104 source:/home/alumno/aaa/labo_sabados/5bis/labo_1/labo1_2/utn.c
+1536283039 source:/home/alumno/aaa/labo_sabados/5bis/labo_1/labo1_2/utn.c
 	<stdio.h>
+	<stdio_ext.h>
 	<stdlib.h>
 	"utn.h"
 

@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <stdio_ext.h>
+#include <stdio_ext.h>
 #include <stdlib.h>
 #include "utn.h"
 static int getInt(int* pResultado);
@@ -74,10 +74,18 @@ static int getChar(char* pChars){
     }
 
     return retornoGetInt;*/
-
+    int numb;
     char cadena [64];
     scanf("%s",cadena);
-    printf("String %s",cadena);
+
+    if(esNumero(cadena)==0){
+    numb = atoi(cadena);
+    printf("String %s\n Numero: %d",cadena,numb);
+
+     }
+
+    ordenar(cadena);
+
 
 }
 
@@ -94,4 +102,30 @@ static float getFloat(float* pFloat){
 
 
 }
+
+
+void esNumero(char* pCadena){
+
+     int i=0;
+     int retorno=0;
+     char aux;
+
+      aux = pCadena[i];
+      while (aux!=0){
+        printf("Char: %d",aux);
+        if(aux < 48 || aux >57){
+            retorno=-1;
+            break;
+        }
+
+        i++;
+        aux = pCadena[i];
+
+      }
+
+     // return retorno;
+      }
+
+
+
 

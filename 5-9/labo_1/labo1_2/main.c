@@ -24,7 +24,12 @@ int main()
     printf("El valor maximo es %d\n",valorMaximo);
     if(initArray(&edades,CANTIDAD_EMPLEADOS,0)==0){
         printf("Array cargado....\n%d",edades[2]);
+    ordenar(&edades,CANTIDAD_EMPLEADOS);
+    for(int k=0; k<CANTIDAD_EMPLEADOS;k++){
+        printf("\nEdad print:%d",edades[k]);
 
+
+    }
     }
 
     return 0;
@@ -54,7 +59,7 @@ int main()
         if(pArray != NULL && limite >0){
 
             for(j=0; j<limite;j++){
-                pArray[j]=valor+1;
+                pArray[j]=j+1;
             }
 
             retorno=0;
@@ -77,6 +82,37 @@ int main()
 
           printf("La edad es %d\n", valor);
         }
+
+    }
+
+
+
+    void ordenar(int* pArray, int limite){
+
+        int flag;
+        int aux;
+
+        while(flag==1){
+        flag=0;
+            for(int i=0; i< limite; i++){
+
+                if(pArray[i] > pArray [i+1]){
+                    aux = pArray[i];
+                    pArray[i]= pArray[i+1];
+                    pArray[i+1]= aux;
+                    flag=1;
+                }
+
+
+
+            }
+
+
+
+
+
+        }
+
 
     }
 
