@@ -6,6 +6,8 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    printf("oh hi mark\n");
+    char nombre [15][50];
+    if()
     return 0;
 }
