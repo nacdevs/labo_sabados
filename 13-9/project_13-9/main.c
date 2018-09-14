@@ -86,11 +86,11 @@ void AltaPersona(Persona* p){
     printf("Ingrese nombre\n");
     fgets(p->nombre,25,stdin);
     printf("Ingrese DNI\n");
-    scanf("%d",auxDni);
+    scanf("%d",&auxDni);
     printf("Ingrese edad\n");
-    scanf("%d",auxEdad);
+    scanf("%d",&auxEdad);
     printf("Ingrese altura\n");
-    scanf("%f",auxAlt);
+    scanf("%f",&auxAlt);
 
     p->dni=auxDni;
     p->altura=auxAlt;
