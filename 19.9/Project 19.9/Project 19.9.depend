@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1537398138 source:/home/alumno/Nestor/labo_sabados/19.9/Project 19.9/Producto.c
+	<stdio.h>
+	<stdlib.h>
+	"Producto.h"
+
+1537398139 source:/home/alumno/Nestor/labo_sabados/19.9/Project 19.9/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Producto.h"
+
+1537398045 /home/alumno/Nestor/labo_sabados/19.9/Project 19.9/Producto.h
+

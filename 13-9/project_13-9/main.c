@@ -9,7 +9,6 @@ struct S_Persona{
     int dni;
     float altura;
 
-
 };
 
 typedef struct S_Persona Persona;
@@ -99,5 +98,5 @@ void AltaPersona(Persona* p){
 
 void printPersona(Persona* p){
 //    printf("Nombre:%s \n Edad: %d\n DNI: %d\n Altura: %.2f\n",p.nombre,p.edad,p.dni,p.altura);
-      printf("Nombre:%s \n Edad: %d\n DNI: %d\n Altura: %.2f\n",p->nombre,p->edad,p->dni,p->altura);
+      printf("\nNombre:%sEdad: %d\nDNI: %d\nAltura: %.2f\n",p->nombre,p->edad,p->dni,p->altura);
 }
