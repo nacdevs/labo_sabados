@@ -4,11 +4,12 @@
 
 struct S_Contratacion{
     char cliente[32];
-    char publicidad[32];
+    //char publicidad[32];
     char video[32];
     int cuit;
     int dias;
-
+    int id;
+    int isEmpty;
 
 
 };

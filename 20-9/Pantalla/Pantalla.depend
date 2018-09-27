@@ -1,17 +1,27 @@
 # depslib dependency file v1.0
-1537485281 source:/home/alumno/Nestor/labo_sabados/20-9/Pantalla/main.c
+1538008207 source:/home/alumno/Nestor/labo_sabados/20-9/Pantalla/main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>
 	<string.h>
 	"Pantalla.c"
+	"Contratacion.c"
 
-1537485506 /home/alumno/Nestor/labo_sabados/20-9/Pantalla/Pantalla.c
+1538009716 /home/alumno/Nestor/labo_sabados/20-9/Pantalla/Pantalla.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>
 	<string.h>
 	"Pantalla.h"
 
-1537485059 /home/alumno/Nestor/labo_sabados/20-9/Pantalla/Pantalla.h
+1537490611 /home/alumno/Nestor/labo_sabados/20-9/Pantalla/Pantalla.h
+
+1538010255 /home/alumno/Nestor/labo_sabados/20-9/Pantalla/Contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"Contratacion.h"
+
+1538003314 /home/alumno/Nestor/labo_sabados/20-9/Pantalla/Contratacion.h
 

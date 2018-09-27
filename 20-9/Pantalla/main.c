@@ -11,10 +11,12 @@ int main()
 
 
     Pantalla arrayPantallas[100];
-    Contratacion contrataciones [100];
+    Contratacion arrayContrataciones [1000];
     pant_inicializarArray(&arrayPantallas,100);
+    cont_inicializarArray(&arrayContrataciones,1000);
+    //pant_pantallasLibre(arrayPantallas,100);
     pant_altaPantalla(&arrayPantallas,100);
-    cont_contratarPantalla()
+    cont_contratarPantalla(&arrayContrataciones,1000,&arrayPantallas,100);
 
 
 
