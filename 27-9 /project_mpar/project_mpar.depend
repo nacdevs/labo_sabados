@@ -33,3 +33,37 @@
 
 1538080723 /home/nest/Documents/Code_UTN /labo_sabados/27-9 /project_mpar/Contratacion.h
 
+1538097484 source:/home/alumno/Nestor/labo_sabados/27-9 /project_mpar/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"Pantalla.c"
+	"Contratacion.c"
+
+1538091213 /home/alumno/Nestor/labo_sabados/27-9 /project_mpar/Pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"Pantalla.h"
+
+1538087781 /home/alumno/Nestor/labo_sabados/27-9 /project_mpar/Pantalla.h
+
+1538097578 /home/alumno/Nestor/labo_sabados/27-9 /project_mpar/Contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"Contratacion.h"
+
+1538094897 /home/alumno/Nestor/labo_sabados/27-9 /project_mpar/Contratacion.h
+
+1538087781 source:/home/alumno/Nestor/labo_sabados/27-9 /project_mpar/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1538087781 /home/alumno/Nestor/labo_sabados/27-9 /project_mpar/Funciones.h
+

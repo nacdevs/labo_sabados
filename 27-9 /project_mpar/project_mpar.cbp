@@ -5,7 +5,6 @@
 		<Option title="project_mpar" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="labo_sabados/27-9 /project_mpar/;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/project_mpar" prefix_auto="1" extension_auto="1" />
@@ -32,25 +31,20 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../../../Libreria_C/Funciones.c">
-			<Option compilerVar="CC" />
-			<Option virtualFolder="labo_sabados/27-9 /project_mpar/" />
-		</Unit>
-		<Unit filename="../../../Libreria_C/Funciones.h" />
 		<Unit filename="Contratacion.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="Contratacion.h">
-			<Option target="&lt;{~None~}&gt;" />
+		<Unit filename="Contratacion.h" />
+		<Unit filename="Funciones.c">
+			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Funciones.h" />
 		<Unit filename="Pantalla.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="Pantalla.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="Pantalla.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

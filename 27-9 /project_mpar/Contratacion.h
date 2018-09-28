@@ -8,6 +8,7 @@ struct S_Contratacion{
     int cuit;
     int dias;
     int id;
+    int idPantalla;
     int isEmpty;
 };
 typedef struct S_Contratacion Contratacion;
