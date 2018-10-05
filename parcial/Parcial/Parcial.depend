@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1538691988 source:/home/alumno/Escritorio/Nestor/parcial/Parcial/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1538691994 /home/alumno/Escritorio/Nestor/parcial/Parcial/Funciones.h
+
+1538701083 source:/home/alumno/Escritorio/Nestor/parcial/Parcial/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"cliente.c"
+	"afiche.c"
+	"Funciones.h"
+
+1538701300 /home/alumno/Escritorio/Nestor/parcial/Parcial/cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"cliente.h"
+	"afiche.h"
+
+1538701553 /home/alumno/Escritorio/Nestor/parcial/Parcial/cliente.h
+
+1538701496 /home/alumno/Escritorio/Nestor/parcial/Parcial/afiche.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"afiche.h"
+
+1538694559 /home/alumno/Escritorio/Nestor/parcial/Parcial/afiche.h
+

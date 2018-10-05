@@ -1,0 +1,109 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio_ext.h>
+#include <string.h>
+#include "cliente.h"
+#include "afiche.h"
+
+static int clienteId=0;
+
+void cl_initArray(Cliente* array, int len){
+      int i;
+      for(i=0;i<len;i++){
+          array[i].isEmpty=1;
+
+      }
+}
+
+int cl_altaCliente(Cliente* array, int len){
+    int  ret=-1;
+    int i;
+
+    for(i=0;i<len;i++){
+        if(array[i].isEmpty==1){
+            break;
+        }
+      }
+
+    char nombre[52];
+    char apellido[52];
+    int cuit;
+    utn_getLetras(&nombre,50,5,"\nIngrese nombre\n","El nombre deben ser letras\n");
+    utn_getLetras(&apellido,50,5,"Ingrese apellido\n","El apellido deben ser letras\n");
+    utn_getInt(&cuit,"Ingrese CUIT sin guiones\n","El cuit debe ser un numero entero sin guiones\n",0,9999999999999999,5);
+    strcpy(array[i].nombre,nombre);
+    strcpy(array[i].apellido,apellido);
+    array[i].cuit=cuit;
+    clienteId=clienteId+1;
+    array[i].id=clienteId;
+    array[i].isEmpty=0;
+    ret=0;
+
+    return ret;
+}
+
+int cl_busId(Cliente* array, int len, int id){
+
+    int ret=-1;
+    int i;
+    for(i=0;i<len;i++){
+        if(array[i].id ==id){
+            ret=i;
+            break;
+        }
+      }
+    return ret;
+
+
+}
+
+int cl_modif(Cliente* array, int len,int id){
+    int ret=-1;
+    int index;
+
+    index=cl_busId(array,len,id);
+
+    if(index!=-1&&(array[index].isEmpty==0)){
+        char nombre[52];
+        char apellido[52];
+        int cuit;
+        utn_getLetras(&nombre,50,5,"Ingrese nombre\n","El nombre deben ser letras\n");
+        utn_getLetras(&apellido,50,5,"Ingrese apellido\n","El apellido deben ser letras\n");
+        utn_getInt(&cuit,"Ingrese CUIT sin guiones\n","El cuit debe ser un numero entero sin guiones\n",0,9999999999999999,5);
+        strcpy(array[index].nombre,nombre);
+        strcpy(array[index].apellido,apellido);
+        array[index].cuit=cuit;
+        ret=0;
+    }
+    return ret;
+}
+
+int cl_bajaCliente(Cliente* array, int len){
+     int ret=-1;
+     int id;
+     ret=utn_getInt(&id,"Ingrese ID de cliente a eliminar\n","El numero debe ser un entero\n",0,99,3);
+     int pos=cl_busId(array,len,id);
+     array[pos].isEmpty=1;
+    return ret;
+}
+
+
+void cl_print(Cliente* array, int len,Afiche* arrayAf, int lenAf){
+    int i;
+    int j;
+    system("clear");
+    printf("Cliente\t\tID\tVentas a cobrar\tZona\n");
+    for(i=0;i<len;i++){
+        if(array[i].isEmpty==0){
+            int clientSum=0;
+            int idClient=array[i].id;
+            for(j=0;j<lenAf;j++){
+                if(arrayAf[j].idCliente==idClient){
+                    arrayAf[i].cantidadAfiches=clientSum;
+                }
+            }
+            printf("%s\t\t%d\t%d\t%d\n",array[i].nombre,array[i].id,clientSum,arrayAf[i].zona);
+            break;
+        }
+      }
+}
