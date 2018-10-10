@@ -92,18 +92,37 @@ void cl_print(Cliente* array, int len,Afiche* arrayAf, int lenAf){
     int i;
     int j;
     system("clear");
-    printf("Cliente\t\tID\tVentas a cobrar\tZona\n");
+    printf("Nombre\t\tApellido\tCUIT\t\tID\tVtas. a cobrar\n");
     for(i=0;i<len;i++){
         if(array[i].isEmpty==0){
             int clientSum=0;
             int idClient=array[i].id;
             for(j=0;j<lenAf;j++){
-                if(arrayAf[j].idCliente==idClient){
-                    arrayAf[i].cantidadAfiches=clientSum;
+                if(arrayAf[j].idCliente==idClient && arrayAf[j].statCobro==1){
+                    clientSum++;
                 }
             }
-            printf("%s\t\t%d\t%d\t%d\n",array[i].nombre,array[i].id,clientSum,arrayAf[i].zona);
+            printf("%s\t\t%s\t\t%d\t\t%d\t%d\n",array[i].nombre,array[i].apellido,array[i].cuit,array[i].id,clientSum);
+
+        }
+      }
+}
+
+void cl_altaForzada(Cliente* array, int len,char nombre[52], char apellido[52], int cuit){
+    int i;
+
+    for(i=0;i<len;i++){
+        if(array[i].isEmpty==1){
             break;
         }
       }
+
+
+    strcpy(array[i].nombre,nombre);
+    strcpy(array[i].apellido,apellido);
+    array[i].cuit=cuit;
+    clienteId=clienteId+1;
+    array[i].id=clienteId;
+    array[i].isEmpty=0;
+
 }

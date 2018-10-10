@@ -23,7 +23,7 @@ int af_ventAfiche(Afiche* array, int len,int id){
         if(array[i].isEmpty==1){
             break;
         }
-}
+    }
     int idCliente=id;
     int cantidadAfiches;
     char nombreArchivo[52];
@@ -48,14 +48,8 @@ int af_ventAfiche(Afiche* array, int len,int id){
     return ret;
 }
 
-void af_editVenta(Afiche* array, int len){
+int af_editVenta(Afiche* array, int len,int index){
     int ret=-1;
-    af_ventas(array,len,0);
-    int id;
-    utn_getInt(&id,"Ingrese ID de venta a modificar\n","El numero debe ser un entero de 0 a 1000",0,1000,3);
-    int index;
-    index=af_busId(array,len,id);
-
 
     if (index!=-1&&(array[index].isEmpty==0)){
         int cantidadAfiches;
@@ -72,7 +66,7 @@ void af_editVenta(Afiche* array, int len){
     return ret;
 }
 
-void af_cobrar(Afiche* array,int len,Cliente* arrayClient,int lenCliente){
+void af_cobrar(Afiche* array,int len){
 
     af_ventas(array,len,1);
     int id;
@@ -108,7 +102,22 @@ void af_ventas(Afiche* array, int len, int data){
       for(i=0;i<len;i++){
         if(array[i].isEmpty==0){
             if(data==1){
-            printf("\nId de venta:%d\nArchivo:%s\nCUIT: %d\nId cliente:%d\nCantidad afiches:%d\n",array[i].id,array[i].archivoImg,array[i].cuit,array[i].idCliente,array[i].cantidadAfiches);
+            int zonanum=array[i].zona;
+            char zonaLet [52];
+            switch(zonanum){
+                case 1:
+                strcpy(zonaLet,"CABA");
+                break;
+
+                case 2:
+                strcpy(zonaLet,"Zona Sur");
+                break;
+
+                case 3:
+                strcpy(zonaLet,"Zona Oeste");
+                break;
+            }
+            printf("\nId de venta:%d\nArchivo:%s\nId cliente:%d\nCantidad afiches:%d\nZona:%s\n",array[i].id,array[i].archivoImg,array[i].idCliente,array[i].cantidadAfiches,zonaLet);
             }else{
             printf("\nid de venta:%d\n",array[i].id);
             }
@@ -118,7 +127,7 @@ void af_ventas(Afiche* array, int len, int data){
       //return ret;
 }
 
-int af_busId(Cliente* array, int len, int id){
+int af_busId(Afiche* array, int len, int id){
     int i;
     int ret=-1;
     for(i=0;i<len;i++){
@@ -128,6 +137,23 @@ int af_busId(Cliente* array, int len, int id){
         }
       }
     return ret;
+}
 
+
+void af_altaForzada(Afiche* array,int len,int zona,int cantAf,int idClient, char archivo[52]){
+    int i;
+    for(i=0;i<len;i++){
+        if(array[i].isEmpty==1){
+            break;
+        }
+    }
+    array[i].idCliente=idClient;
+    array[i].cantidadAfiches=cantAf;
+    strcpy(array[i].archivoImg, archivo);
+    array[i].zona=zona;
+    aficheId=aficheId+1;
+    array[i].id=aficheId;
+    array[i].statCobro=1;
+    array[i].isEmpty=0;
 
 }
