@@ -108,6 +108,17 @@ void cl_print(Cliente* array, int len,Afiche* arrayAf, int lenAf){
       }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 void cl_altaForzada(Cliente* array, int len,char nombre[52], char apellido[52], int cuit){
     int i;
 

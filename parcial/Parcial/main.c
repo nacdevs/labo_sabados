@@ -25,6 +25,9 @@ int main()
     af_altaForzada(&arrayAfiche,1000,1,20,4,"imagen");
     af_altaForzada(&arrayAfiche,1000,1,10,4,"prop");
 
+    //informaDeud(&arrayAfiche,1000);
+    calculaVentas(&arrayAfiche,1000,0);
+    af_zonaAfi(&arrayAfiche,1000);
 
     while(option != 8){
     int id;

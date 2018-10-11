@@ -139,7 +139,126 @@ int af_busId(Afiche* array, int len, int id){
     return ret;
 }
 
+void calculaVentas(Afiche* array,int len ,int aCobrar){
+    int i;
+    int arrayDeud [1000][2];
 
+    for(i=0;i<len;i++){
+
+        int isEmpty= array[i].isEmpty;
+        int actual=array[i].idCliente;
+        int clienteSum=0;
+        int j;
+        for(j=0;j<len;j++){
+            int idCliente=array[j].idCliente;
+            int statCobro= array[j].statCobro;
+            int isEmpty=array[j].isEmpty;
+            if(idCliente==actual && statCobro==aCobrar && isEmpty==0){
+            clienteSum++;
+            }
+        }
+
+        arrayDeud[i][0]=actual;
+        arrayDeud[i][1]=clienteSum;
+        if(arrayDeud[i][1]!=0){
+        printf("Id cliente:%d, cliente sum: %d\n",arrayDeud[i][0], arrayDeud[i][1]);
+
+        }
+
+
+    }
+    int flagOrder=1;
+    while(flagOrder==1){
+
+        for(i=0;i<len;i++){
+        flagOrder=0;
+           int temp;
+           int tempClient;
+           int current=arrayDeud[i][1];
+           int next =arrayDeud[i+1][1];
+           int currentClient=arrayDeud[i][0];
+           int nextClient =arrayDeud[i+1][0];
+           if(current>next){
+                temp=next;
+                tempClient=nextClient;
+
+                current=next;
+                currentClient=nextClient;
+
+                next=temp;
+                nextClient=tempClient;
+                flagOrder=1;
+            }
+
+        }
+
+    }
+
+    printf("El cliente con menos ventas a cobrar es el ID:%d\n",arrayDeud[0][1]);
+}
+
+/*void informaDeud(Afiche* array, int len){
+    int i;
+    int arrayDeud[1000][2];
+    for(i=0;i<len;i++){
+
+        if(actual==1 && isEmpty==0){
+            int idCliente=array[i].idCliente;
+            int statCobro=array[i].statCobro;
+            arrayDeud[i][0]=idCliente;
+            arrayDeud[i][1]=statCobro;
+            arrayDeud[i][2]=2;
+          //  printf("%d",arrayDeud[i][0]);
+        }
+
+    }
+    int j;
+    for(j=0;j<len;j++){
+        if(arrayDeud[j][2]==2){
+            printf("Idcliente:%d\tA cobrar:%d\n",arrayDeud[j][0],arrayDeud[j][1]);
+        }
+
+    }
+
+
+}
+*/
+
+
+
+
+
+void af_zonaAfi(Afiche* array, int len){
+    int mayor;
+    int numeros[3];
+    int i;
+    for(i=0;i<len;i++){
+        int zona=array[i].zona;
+        switch(zona){
+            case 1:
+                numeros[0]=numeros[0]+1;
+                break;
+            case 2:
+                numeros[1]=numeros[1]+1;
+                break;
+            case 3:
+                numeros[2]=numeros[2]+1;
+                break;
+
+        }
+
+    }
+
+    for(int i=0;i<len;i++){
+        int previous=0;
+        if(numeros[i]>previous){
+            previous=numeros[i];
+            mayor=numeros[i];
+        }
+    }
+
+    printf("La zona con mas afiches es la zona %d", mayor);
+}
 void af_altaForzada(Afiche* array,int len,int zona,int cantAf,int idClient, char archivo[52]){
     int i;
     for(i=0;i<len;i++){

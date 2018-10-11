@@ -71,3 +71,39 @@
 	<string.h>
 	"afiche.h"
 
+1539209098 source:/home/alumno/Nestor/labo_sabados/parcial/Parcial/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1539209098 /home/alumno/Nestor/labo_sabados/parcial/Parcial/Funciones.h
+
+1539216401 source:/home/alumno/Nestor/labo_sabados/parcial/Parcial/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"cliente.c"
+	"afiche.c"
+	"Funciones.h"
+
+1539209347 /home/alumno/Nestor/labo_sabados/parcial/Parcial/cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"cliente.h"
+	"afiche.h"
+
+1539209098 /home/alumno/Nestor/labo_sabados/parcial/Parcial/cliente.h
+
+1539209098 /home/alumno/Nestor/labo_sabados/parcial/Parcial/afiche.h
+
+1539216601 /home/alumno/Nestor/labo_sabados/parcial/Parcial/afiche.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<string.h>
+	"afiche.h"
+
