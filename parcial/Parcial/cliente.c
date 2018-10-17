@@ -28,7 +28,7 @@ int cl_altaCliente(Cliente* array, int len){
     char nombre[52];
     char apellido[52];
     int cuit;
-    utn_getLetras(&nombre,50,5,"\nIngrese nombre\n","El nombre deben ser letras\n");
+    utn_getLetras(&nombre,50,5,"Ingrese nombre\n","El nombre deben ser letras\n");
     utn_getLetras(&apellido,50,5,"Ingrese apellido\n","El apellido deben ser letras\n");
     utn_getInt(&cuit,"Ingrese CUIT sin guiones\n","El cuit debe ser un numero entero sin guiones\n",0,9999999999999999,5);
     strcpy(array[i].nombre,nombre);
@@ -111,7 +111,19 @@ void cl_print(Cliente* array, int len,Afiche* arrayAf, int lenAf){
 
 
 
+int cl_sumaCliente(Cliente* array,int len){
+    int ret=-1;
+    int contador=0;
+    int i;
+    for(i=0;i<len;i++){
+       if(array[i].isEmpty==0 && array[i].id!=0){
+            contador++;
+       }
 
+    }
+    ret=contador;
+    return ret;
+}
 
 
 

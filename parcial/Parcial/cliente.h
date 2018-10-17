@@ -15,5 +15,14 @@ void cl_initArray(Cliente* array, int len);
 
 int cl_altaCliente(Cliente* array, int len);
 
+int cl_busId(Cliente* array, int len, int id);
+
+int cl_modif(Cliente* array, int len,int id);
+
+int cl_bajaCliente(Cliente* array, int len);
+
+int cl_sumaCliente(Cliente* array,int len);
+
+void cl_altaForzada(Cliente* array, int len,char nombre[52], char apellido[52], int cuit);
 
 #endif // CLIENTE_H_INCLUDED
