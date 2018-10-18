@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1539823720 source:/home/alumno/Nestor/labo_sabados/pointer/memo_din17-10/main.c
+	<stdio.h>
+	<stdlib.h>
+	"empleado.c"
+
+1539825369 /home/alumno/Nestor/labo_sabados/pointer/memo_din17-10/empleado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"empleado.h"
+
+1539816719 /home/alumno/Nestor/labo_sabados/pointer/memo_din17-10/empleado.h
+
