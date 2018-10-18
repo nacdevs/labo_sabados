@@ -43,7 +43,7 @@
 
 1539452201 /home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/Funciones.h
 
-1539806611 source:/home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/main.c
+1539889383 source:/home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>
@@ -51,10 +51,8 @@
 	"cliente.c"
 	"afiche.c"
 	"Informes.c"
-	"Informes.h"
-	"Funciones.h"
 
-1539806575 /home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/cliente.c
+1539889422 /home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/cliente.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>
@@ -109,11 +107,12 @@
 	<string.h>
 	"afiche.h"
 
-1539807017 /home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/Informes.c
+1539889215 /home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/Informes.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>
 	<string.h>
+	"Informes.h"
 
-1539806391 /home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/Informes.h
+1539889083 /home/nest/Documents/Code_UTN /labo_sabados/parcial/Parcial/Informes.h
 

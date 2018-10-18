@@ -5,6 +5,7 @@
 #include "cliente.h"
 #include "afiche.h"
 
+
 static int clienteId=0;
 
 void cl_initArray(Cliente* array, int len){

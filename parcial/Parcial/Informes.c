@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdio_ext.h>
 #include <string.h>
+#include "Informes.h"
+
 
 static int sumaAfiches;
 
@@ -192,22 +194,12 @@ int inf_getSumaAfiches(){
 int inf_listaVentasPorZona(Afiche* array, int len){ //j)
     int i;
     int ret=-1;
-    int zonaActual=1;
+    int zonaActual;
     printf("j.---Ventas por Zona---:\n");
-    for(zonaActual;zonaActual<=3;zonaActual++){
-         switch(zonaActual){
-                    case 1:
-                    printf("\nCiudad de Buenos Aires:\n");
-                    break;
-
-                    case 2:
-                    printf("\nZona Sur:\n");
-                    break;
-
-                    case 3:
-                    printf("\nZona Oeste:\n");
-                    break;
-                }
+    for(zonaActual=1;zonaActual<=3;zonaActual++){
+          char zonaLet[150];
+          zonaALetras(zonaLet,zonaActual);
+          printf("\n%s\n", zonaLet);
          for(i=0;i<len;i++){
             int isEmpty= array[i].isEmpty;
             int actual=array[i].idCliente;
@@ -242,9 +234,7 @@ void inf_zonaAfi(Afiche* array, int len){ //d)
             case 3:
                 numeros[2]=numeros[2]+1;
                 break;
-
         }
-
     }
 
     for(int i=0;i<len;i++){
@@ -256,9 +246,9 @@ void inf_zonaAfi(Afiche* array, int len){ //d)
     }
 
     char zonaLet[150];
-    zonaALetras(&zonaLet,mayor);
+    zonaALetras(zonaLet,mayor);
 
-    printf("d.La zona con mas afiches es la %s\n\n", &zonaLet);
+    printf("d.La zona con mas afiches es la %s\n\n", zonaLet);
 }
 
 //Recibe numero de Zona y devuelve el nombre
@@ -266,18 +256,15 @@ void zonaALetras (char* pLZona,int zona){
 
     switch(zona){
         case 1:
-        //*pLZona="Ciudad de Buenos Aires";
-        strcpy(pLZona, "Ciudad de Buenos Aires");
+        strcpy(pLZona,"Ciudad de Buenos Aires");
         break;
 
         case 2:
-        //*pLZona="Zona Sur";
-        strcpy(pLZona, "Zona Sur");
+        strcpy(pLZona,"Zona Sur");
         break;
 
         case 3:
-        //*pLZona="Zona Oeste";
-        strcpy(pLZona, "Zona Oeste");
+        strcpy(pLZona,"Zona Oeste");
         break;
     }
 
