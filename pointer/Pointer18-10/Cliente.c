@@ -20,7 +20,7 @@ int cli_setNombre(Cliente* this, char* nombre){
     return retorno;
 
 }
-
+///
 
 int cli_getNombre(Cliente* this , char* nom){
 
