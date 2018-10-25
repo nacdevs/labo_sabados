@@ -29,7 +29,7 @@ int main()
 
 
         /*[^,] Quiero hasta (^) la coma ","
-        (pero no la coma por que le estoy aclarando cuando le escribo la misma variable despues del corchete)
+        (pero no la coma por que le estoy aclarando  cuando le escribo la misma variable despues del corchete)
         en el txt que traigo*/
 
         ///////////
