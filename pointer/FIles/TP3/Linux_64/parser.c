@@ -22,7 +22,7 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
     char auxBufferSueldo[50];
     int bufferSueldo;
     int flagFirstLine=0;
-    Employee auxEmployee;
+    Employee* auxEmployee;
 
 
      if(pFile != NULL)
@@ -33,12 +33,9 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
                 bufferId= atoi(auxBufferId);
                 bufferHoras = atoi(auxBufferHoras);
                 bufferSueldo= atoi(auxBufferSueldo);
-                //printf("%d - %s - %d - %d\n",bufferId,bufferNombre,bufferHoras,bufferSueldo);
-                strcpy(auxEmployee.nombre,bufferNombre);
-                auxEmployee.id=bufferId;
-                auxEmployee.horas=bufferHoras;
-                auxEmployee.sueldo=bufferSueldo;
-                ll_add(pArrayListEmployee,auxEmployee);
+                auxEmployee=Employee_newConParametros(bufferNombre,bufferId,bufferHoras,bufferSueldo);
+                ll_add(pArrayListEmployee,(Employee*)auxEmployee);
+
             }
             if(flagFirstLine==0){
                 flagFirstLine++;
@@ -62,6 +59,13 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
  */
 int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 {
+     Employee* pEmpleado;
+    do{
+        pEmpleado = Employee_new();
+        fread(pEmpleado,sizeof(Employee),1,pFile);
+        ll_add(pArrayListEmployee, pEmpleado);
+    }while(!feof(pFile));
 
+    return 1;
     return 1;
 }

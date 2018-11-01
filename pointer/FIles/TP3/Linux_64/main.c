@@ -27,7 +27,10 @@ int main()
         switch(option)
         {
             case 1:
-                controller_loadFromText("data.csv",listaEmpleados);
+                //controller_loadFromText("data.csv",listaEmpleados); works
+                controller_loadFromBinary("data.bin",listaEmpleados); // works
+                controller_ListEmployee(listaEmpleados); // works
+                controller_saveAsBinary("data.bin",listaEmpleados); //works
                 option++;
                 break;
         }
