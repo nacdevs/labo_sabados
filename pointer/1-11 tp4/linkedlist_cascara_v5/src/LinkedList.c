@@ -33,11 +33,12 @@ LinkedList* ll_newLinkedList(void)
  */
 int ll_len(LinkedList* this)
 {
-
-
-
-
     int returnAux = -1;
+
+    if(this!=NULL)
+    {
+        returnAux=this->size;
+    }
 
     return returnAux;
 }
@@ -58,12 +59,14 @@ static Node* getNode(LinkedList* this, int nodeIndex)
 
     pNode = this->pFirstNode;
 
-    while(1){
+    while(1)
+    {
         if(indexNodoActual==nodeIndex)
             break;
-        if(pNode!=NULL){
-        pNode = pNode->pNextNode;
-        indexNodoActual++;
+        if(pNode!=NULL)
+        {
+            pNode = pNode->pNextNode;
+            indexNodoActual++;
         }
 
     }
@@ -127,7 +130,33 @@ int ll_add(LinkedList* this, void* pElement)
 {
     int returnAux = -1;
 
-    return returnAux;
+    Node* node= malloc(sizeof(Node));
+    node->pElement=pElement;
+    node->pNextNode=NULL;
+
+    if(this->size==0)
+    {
+        this->pFirstNode=node;
+    }
+    else
+    {
+        Node* auxNode = this->pFirstNode;
+        while(auxNode->pNextNode!=NULL)
+        {
+            auxNode = auxNode->pNextNode;
+        }
+
+        auxNode->pNextNode=node;
+    }
+    this->size++;
+}
+
+
+
+
+
+
+return returnAux;
 }
 
 /** \brief Permite realizar el test de la funcion addNode la cual es privada
@@ -342,7 +371,7 @@ LinkedList* ll_clone(LinkedList* this)
  * \return int Retorna  (-1) Error: si el puntero a la listas es NULL
                                 ( 0) Si ok
  */
-int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
+int ll_sort(LinkedList* this, int (*pFunc)(void*,void*), int order)
 {
     int returnAux =-1;
 
