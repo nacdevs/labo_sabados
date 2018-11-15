@@ -456,9 +456,28 @@ int ll_containsAll(LinkedList* this,LinkedList* this2)
 LinkedList* ll_subList(LinkedList* this,int from,int to)
 {
     LinkedList* cloneArray = NULL;
-    len=ll_len(this);
+    Node* auxNode;
+    void* pElement;
+    int len=ll_len(this);
+    int flag=0;
+    int i;
     if(this!=NULL && from>=0 && to>=from && to<=len){
+    int from2=from;
+        for(i=0; i<len; i++){
+                if(flag==0){
+                cloneArray=ll_newLinkedList();
+                auxNode=getNode(this,from);
+                pElement=auxNode->pElement;
+                addNode(cloneArray,0,pElement);
+                flag++;
+            }else{
+                from2++;
+                auxNode=getNode(this,from2);
+                pElement=auxNode->pElement;
+                addNode(cloneArray,i,pElement);
+            }
 
+        }
 
     }
     return cloneArray;
@@ -475,6 +494,10 @@ LinkedList* ll_subList(LinkedList* this,int from,int to)
 LinkedList* ll_clone(LinkedList* this)
 {
     LinkedList* cloneArray = NULL;
+    if(this!=NULL){
+    int len=ll_len(this);
+    cloneArray=ll_subList(this,0,len);
+    }
 
     return cloneArray;
 }
@@ -490,8 +513,38 @@ LinkedList* ll_clone(LinkedList* this)
 int ll_sort(LinkedList* this, int (*pFunc)(void*,void*), int order)
 {
     int returnAux =-1;
+    int len = ll_len(this);
+    void* auxVoid;
+    void* auxVoid2;
+    int i;
+    if(this!=NULL && pFunc!=NULL && (order==1 || order ==0)){
+        if(order==1){
+          for(i=0;i<len;i++){
+            if(pFunc==1){
+                auxVoid=ll_get(this,i);
+                ll_set(this,i,auxVoid2);
+                auxVoid2=auxVoid;
+                returnAux=0;
+            }else{
+                (pFunc==0)   /// <---- CONTINUAR DESDE ACA !!!!!!!!
+                auxVoid2=ll_get(this,i);
+                ll_set(this,i,auxVoid2);
+                auxVoid2=auxVoid;
+                returnAux=0;
+
+            }
+          }
+
+
+        }else{
+         if(order==1){
+
+         }
+        }
+    }
 
     return returnAux;
 
 }
+
 
