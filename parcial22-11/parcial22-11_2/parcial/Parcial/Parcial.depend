@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1542922607 source:/home/alumno/Nestor/22-11/parcial/Parcial/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1542922607 /home/alumno/Nestor/22-11/parcial/Parcial/Funciones.h
+
+1543071741 source:/home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/func.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"parser2puntocero.h"
+	"Venta.h"
+
+1543068344 /home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/LinkedList.h
+
+1543067601 /home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/Venta.h
+
+1543067601 source:/home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1543067601 /home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/Funciones.h
+
+1543069848 source:/home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1543071518 source:/home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1543067601 source:/home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/Venta.c
+	"Venta.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1543070528 /home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/parser.h
+
+1543071484 /home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/parser2puntocero.h
+
+1543071664 source:/home/alumno/Nestor/labo_sabados/parcial22-11/parcial/Parcial/parser2puntocero.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Venta.h"
+
