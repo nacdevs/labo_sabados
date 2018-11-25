@@ -39,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="LinkedList.h" />
+		<Unit filename="Parser2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Parser2.h" />
 		<Unit filename="Venta.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -48,12 +52,9 @@
 		<Unit filename="func.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="func.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="parser.c">
-			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Extensions>
 			<code_completion />

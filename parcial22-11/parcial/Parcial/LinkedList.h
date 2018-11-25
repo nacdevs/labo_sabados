@@ -28,6 +28,7 @@ struct LinkedList
 {
     Node* pFirstNode;
     int size;
+    Node* pIterNode;
 }typedef LinkedList;
 #endif
 

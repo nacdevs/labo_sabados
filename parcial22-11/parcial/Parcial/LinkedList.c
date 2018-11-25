@@ -600,16 +600,52 @@ LinkedList* ll_map(LinkedList* this, int (*pFunc)(void*)){
 
 }
 
-int ll_count(LinkedList* this, int(*fn)(void* pElement)){
+
+// START(LinkedList*)
+Node* ll_startIterator(LinkedList* this) //puede devolver error asique podria ser INT
+{
+
+    Node*ret=NULL;
+    if(this!=NULL)
+    {
+        this->pIterNode=this->pFirstNode;
+        ret=this->pIterNode;
+    }
+    return ret;
+}
+
+
+//GETNEXT(LinkedList*)
+
+Node* ll_ItGetNext(LinkedList* this)
+{
+
+    Node* ret = NULL;
+    if(this->pIterNode!=NULL)
+    {
+        this->pIterNode=(this->pIterNode)->pNextNode;
+        ret=this->pIterNode;
+    }
+    return ret;
+}
+
+
+int ll_count(LinkedList* this, int(*fn)(void*))
+{
     int sumador=0;
     int len = ll_len(this);
+    void* pElement;
 
-    for(int i=0; i<len;i++){
-        void* element= ll_get(this,i);
-        int num=fn(element)
-        if(num>0){
+    for(int i=0; i<len; i++)
+    {
+        pElement=ll_get(this,i);
+        int num=fn(pElement);
+        if(num>0)
+        {
             sumador=sumador+num;
         }
     }
     return sumador;
 }
+
+

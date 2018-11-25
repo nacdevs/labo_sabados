@@ -34,7 +34,7 @@ static int getString(char* pBuffer, int limite)
 }
 
 
- int getFloat(float* pBuffer)
+int getFloat(float* pBuffer)
 {
     char bufferString [4096];
     int retorno = -1;
@@ -51,21 +51,21 @@ static int getString(char* pBuffer, int limite)
 
 
 int utn_getFloat(  float* pFloat, char* msg,
-                    char msgErr[],float min, float max,
-                    int reintentos)
+                   char msgErr[],float min, float max,
+                   int reintentos)
 
 {
     int retorno=-1;
     float buffer;
     if( pFloat != NULL &&  msg != NULL && msgErr != NULL &&
-         min <= max && reintentos >= 0)
+            min <= max && reintentos >= 0)
     {
         do
         {
             reintentos--;
             printf("%s",msg);
             if( getFloat(&buffer) == 0 &&
-                buffer >= min && buffer <= max)
+                    buffer >= min && buffer <= max)
             {
                 retorno = 0;
                 *pFloat = buffer;
@@ -75,7 +75,8 @@ int utn_getFloat(  float* pFloat, char* msg,
             {
                 printf("%s",msgErr);
             }
-        }while(reintentos >= 0);
+        }
+        while(reintentos >= 0);
     }
     return retorno;
 }
@@ -83,7 +84,7 @@ int utn_getFloat(  float* pFloat, char* msg,
 void mostrarArray(int* pArray, int limite)
 {
     int i;
-    for(i=0;i<limite;i++)
+    for(i=0; i<limite; i++)
     {
         printf("\nIndex:%d - Value:%d - Add: %p",i,pArray[i],&pArray[i]);
     }
@@ -100,7 +101,7 @@ int calcularMaximoArray(int* pArray, int limite, int* pMaximo)
     if(pArray != NULL && limite > 0)
     {
 
-        for(i=0;i<limite;i++)
+        for(i=0; i<limite; i++)
         {
             if(pArray[i] != DATO_INVALIDO)
             {
@@ -133,11 +134,11 @@ void initArray(int* pArray, int limite, int valor)
     int i;
     if(pArray != NULL && limite > 0)
     {
-        for(i=0;i<limite;i++)
+        for(i=0; i<limite; i++)
         {
             pArray[i] = valor;
         }
-}
+    }
 }
 
 void ordenarArray(int *pArray,int limite,int flagMayorMenor)
@@ -149,7 +150,7 @@ void ordenarArray(int *pArray,int limite,int flagMayorMenor)
     while(flagnoTerminedeOrdenar==1)
     {
         flagnoTerminedeOrdenar=0;
-        for(i=0;i<limite-1;i++)
+        for(i=0; i<limite-1; i++)
         {
             if((flagMayorMenor==1 && pArray[i]>pArray[i+1]) || (flagMayorMenor==0 && pArray[i]<pArray[i+1]))
             {
@@ -168,27 +169,27 @@ int verificarArreglosoloFlotantes(char* pBuffer)
     char auxiliar=pBuffer[i];
     int contadorPunto=0;
     while(auxiliar!='\0')
+    {
+        if(auxiliar==' ' || (auxiliar>='a' && auxiliar<='z') || (auxiliar>='A' && auxiliar<='Z'))
         {
-            if(auxiliar==' ' || (auxiliar>='a' && auxiliar<='z') || (auxiliar>='A' && auxiliar<='Z'))
-                {
-                    retorno=-1;
-                    break;
-                }
-            if(auxiliar=='.')
-                {
-                    contadorPunto++;
-                }
-            if(contadorPunto==1)
-                {
-                    retorno=0;
-                }
-            else
-                {
-                    retorno=-1;
-                }
-                i++;
-                auxiliar=pBuffer[i];
+            retorno=-1;
+            break;
         }
+        if(auxiliar=='.')
+        {
+            contadorPunto++;
+        }
+        if(contadorPunto==1)
+        {
+            retorno=0;
+        }
+        else
+        {
+            retorno=-1;
+        }
+        i++;
+        auxiliar=pBuffer[i];
+    }
 
     return retorno;
 }
@@ -200,12 +201,12 @@ int verificarArrayLetras(char *pArreglo)
     while(auxiliar!= '\0')
     {
         if((auxiliar!=' ')&&(auxiliar<'a' || auxiliar>'z') && (auxiliar<'A' || auxiliar>'Z' ))
-            {
-                retorno=0;
-                break;
-            }
-            i++;
-            auxiliar=pArreglo[i];
+        {
+            retorno=0;
+            break;
+        }
+        i++;
+        auxiliar=pArreglo[i];
     }
     return retorno;
 }
@@ -218,12 +219,12 @@ int verificarArrayAlfa(char *pArreglo)
     while(auxiliar!= '\0')
     {
         if((auxiliar==' ')&&(auxiliar<'a' || auxiliar>'z') && (auxiliar<'A' || auxiliar>'Z' )&&(auxiliar<'0'|| auxiliar>'9'))
-            {
-                retorno=0;
-                break;
-            }
-            i++;
-            auxiliar=pArreglo[i];
+        {
+            retorno=0;
+            break;
+        }
+        i++;
+        auxiliar=pArreglo[i];
     }
     return retorno;
 }
@@ -237,24 +238,24 @@ int verificarNumeroTelefono(char *pArreglo)
     while(auxiliar!= '\0')
     {
         if((auxiliar==' ')&&(auxiliar<'a' || auxiliar>'z') && (auxiliar<'A' || auxiliar>'Z' )&&(auxiliar<'0'|| auxiliar>'9'))
-            {
-                retorno=0;
-                break;
-            }
+        {
+            retorno=0;
+            break;
+        }
         if(auxiliar=='-')
-            {
-                contarGuion++;
-            }
+        {
+            contarGuion++;
+        }
         if(contarGuion==1)
-            {
-                retorno=1;
-            }
+        {
+            retorno=1;
+        }
         else
-            {
-                retorno=0;
-            }
-            i++;
-            auxiliar=pArreglo[i];
+        {
+            retorno=0;
+        }
+        i++;
+        auxiliar=pArreglo[i];
     }
     return retorno;
 }
@@ -266,17 +267,17 @@ int verificarArrayNumeros(char *pArreglo)
     while(auxiliar!= '\0')
     {
         if(auxiliar==' ' || (auxiliar>='a' && auxiliar<='z') || (auxiliar>='A' && auxiliar<='Z') || auxiliar=='.')
-            {
-                retorno=-1;
-                break;
-            }
-            i++;
-            auxiliar=pArreglo[i];
+        {
+            retorno=-1;
+            break;
+        }
+        i++;
+        auxiliar=pArreglo[i];
     }
     return retorno;
 }
 
- int getInt(int* pBuffer)
+int getInt(int* pBuffer)
 {
     char bufferString [4096];
     int retorno = -1;
@@ -290,22 +291,24 @@ int verificarArrayNumeros(char *pArreglo)
 
     return retorno;
 }
-int utn_getInt(  int* pInt, char* msg,
-                    char msgErr[],int min, int max,
-                    int reintentos)
 
+
+
+int utn_getInt(  int* pInt, char* msg,
+                 char msgErr[],int min, int max,
+                 int reintentos)
 {
     int retorno=-1;
     int buffer;
     if( pInt != NULL &&  msg != NULL && msgErr != NULL &&
-         min <= max && reintentos >= 0)
+            min <= max && reintentos >= 0)
     {
         do
         {
             reintentos--;
             printf("%s",msg);
             if( getInt(&buffer) == 0 &&
-                buffer >= min && buffer <= max)
+                    buffer >= min && buffer <= max)
             {
                 retorno = 0;
                 *pInt = buffer;
@@ -315,7 +318,8 @@ int utn_getInt(  int* pInt, char* msg,
             {
                 printf("%s",msgErr);
             }
-        }while(reintentos >= 0);
+        }
+        while(reintentos >= 0);
     }
     return retorno;
 }
@@ -324,7 +328,7 @@ void insertion(int data[],int len)
 {
     int i,j;
     int temp;
-    for(i=1;i<len;i++)
+    for(i=1; i<len; i++)
     {
         temp=data[i];
         j=i-1;
@@ -337,20 +341,26 @@ void insertion(int data[],int len)
     }
 }
 
-int utn_getLetras(char *pBuffer,int limite,int reintentos,char* msj,char*msjError){
+int utn_getLetras(char *pBuffer,int limite,int reintentos,char* msj,char*msjError)
+{
     int retorno=-1;
     char buffer[limite];
-    if(pBuffer!=NULL && limite >0 && reintentos >=0){
-        do{
+    if(pBuffer!=NULL && limite >0 && reintentos >=0)
+    {
+        do
+        {
             reintentos--;
             printf("\n%s",msj);
-            if(getString(buffer,limite)==0 && isLetras(buffer)==0){
+            if(getString(buffer,limite)==0 && isLetras(buffer)==0)
+            {
                 strncpy(pBuffer,buffer,limite);
                 retorno=0;
                 break;
-            }else
+            }
+            else
                 printf("\n%s",msjError);
-        }while(reintentos>=0);
+        }
+        while(reintentos>=0);
     }
     return retorno;
 }
@@ -358,36 +368,47 @@ static int isLetras(char*pBuffer)
 {
     int retorno=-1;
     int i=0;
-    if(pBuffer!=NULL){
-        do{
-            if((*(pBuffer+i)<65||*(pBuffer+i)>90) && (*(pBuffer+i)<97||*(pBuffer+i)>122)){
+    if(pBuffer!=NULL)
+    {
+        do
+        {
+            if((*(pBuffer+i)<65||*(pBuffer+i)>90) && (*(pBuffer+i)<97||*(pBuffer+i)>122))
+            {
                 break;
             }
             i++;
-        }while(i<strlen(pBuffer));
-        if(i==strlen(pBuffer)){
+        }
+        while(i<strlen(pBuffer));
+        if(i==strlen(pBuffer))
+        {
             retorno=0;
         }
     }
     return retorno;
 
 
-    }
+}
 
-int utn_getMail(char *pBuffer,int limite,int reintentos,char* msj,char*msjError){
+int utn_getMail(char *pBuffer,int limite,int reintentos,char* msj,char*msjError)
+{
     int retorno=-1;
     char buffer[limite];
-    if(pBuffer!=NULL && limite >0 && reintentos >=0){
-        do{
+    if(pBuffer!=NULL && limite >0 && reintentos >=0)
+    {
+        do
+        {
             reintentos--;
             printf("\n%s",msj);
-            if(getString(buffer,limite)==0 && verificarMail(buffer)==0){
+            if(getString(buffer,limite)==0 && verificarMail(buffer)==0)
+            {
                 strncpy(pBuffer,buffer,limite);
                 retorno=0;
                 break;
-            }else
+            }
+            else
                 printf("\n%s",msjError);
-        }while(reintentos>=0);
+        }
+        while(reintentos>=0);
     }
     return retorno;
 }
@@ -401,23 +422,49 @@ static int verificarMail(char *arreglo)
     int contadorArrobas=0;
 
     while(bufferAuxiliar!='\0')
+    {
+        if(bufferAuxiliar=='@')
         {
-            if(bufferAuxiliar=='@')
-                {
-                    contadorArrobas++;
-                }
-            if(bufferAuxiliar=='.')
-                {
-                    contadorPuntos++;
-                }
-                i++;
-                bufferAuxiliar=arreglo[i];
+            contadorArrobas++;
         }
-        if(contadorArrobas==1 && contadorPuntos>=1)
-            {
-                retorno=0;
-            }
-            else{retorno=-1;}
+        if(bufferAuxiliar=='.')
+        {
+            contadorPuntos++;
+        }
+        i++;
+        bufferAuxiliar=arreglo[i];
+    }
+    if(contadorArrobas==1 && contadorPuntos>=1)
+    {
+        retorno=0;
+    }
+    else
+    {
+        retorno=-1;
+    }
 
- return retorno;
+    return retorno;
+}
+
+
+int utn_getSlashFecha(char* fecha)
+{
+    int ret=-1;
+    int i;
+    int slashCounter=0;
+    if(fecha!=NULL){
+        for(i=0;i<10;i++){
+            char bufferChar=fecha[i];
+            int comp=strcmp(bufferChar,"/");
+            if(comp==0){
+                slashCounter++;
+            }
+        }
+        if(slashCounter==3){
+            ret=0;
+        }
+    }
+
+  return ret;
+
 }
