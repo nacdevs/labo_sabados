@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Funciones.h" />
+		<Unit filename="Informe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Informe.h" />
 		<Unit filename="LinkedList.c">
 			<Option compilerVar="CC" />
 		</Unit>

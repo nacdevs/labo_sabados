@@ -446,25 +446,32 @@ static int verificarMail(char *arreglo)
     return retorno;
 }
 
-
-int utn_getSlashFecha(char* fecha)
-{
+ int utn_validSlashFecha(char* fecha){
     int ret=-1;
     int i;
     int slashCounter=0;
-    if(fecha!=NULL){
-        for(i=0;i<10;i++){
-            char bufferChar=fecha[i];
-            int comp=strcmp(bufferChar,"/");
-            if(comp==0){
-                slashCounter++;
-            }
-        }
-        if(slashCounter==3){
-            ret=0;
+
+    for(i=0;i<10;i++){
+        if(fecha[i]=="/"){
+            slashCounter++;
         }
     }
+    if(slashCounter==3){
+        ret=0;
+    }
+}
 
-  return ret;
+int utn_isValidProduct(char* prod){
+    int ret=-1;
+    int i;
+    int underCounter=0;
 
+    for(i=0;i<15;i++){
+        if(prod[i]=="_"){
+            underCounter++;
+        }
+    }
+    if(underCounter>0){
+        ret=0;
+    }
 }

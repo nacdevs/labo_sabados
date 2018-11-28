@@ -15,7 +15,7 @@
 
 1543154482 /home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/Venta.h
 
-1543164892 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/func.c
+1543370768 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/func.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -23,7 +23,7 @@
 
 1543157467 /home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/LinkedList.h
 
-1543156533 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/Funciones.c
+1543369530 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/Funciones.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -37,15 +37,16 @@
 	<string.h>
 	"LinkedList.h"
 
-1543164257 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/main.c
+1543371073 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"func.h"
+	"Informe.h"
 
 1543157671 /home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/parser.h
 
-1543160357 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/Parser2.c
+1543371045 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/Parser2.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -53,4 +54,12 @@
 
 1543163780 /home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/func.h
 	"Venta.h"
+
+1543371236 source:/home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/Informe.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"func.h"
+
+1543366477 /home/nest/Documents/Code_UTN /25-11 /labo_sabados/parcial22-11/parcial/Parcial/Informe.h
 

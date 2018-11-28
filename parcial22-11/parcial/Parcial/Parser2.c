@@ -2,7 +2,13 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "Venta.h"
-
+/** \brief Extrae los datos de un archivo .csv y los guarda como "Venta" en una LinkedList
+ *
+ * \param FILE* pFile Archivo del cual se extraen los datos
+ * \param LinkedList* pArrayListVenta Lista en donde se guardan los datos
+ * \return Person* Retorna 0en error o en caso contrario 1
+ *
+ */
 int parser_readCsv(FILE* pFile , LinkedList* pArrayListVenta)
 {
     int ret=-1;
@@ -34,16 +40,22 @@ int parser_readCsv(FILE* pFile , LinkedList* pArrayListVenta)
             if(fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^,],%[^\n]\n",bufferId,bufferFecha,bufferCodigo,bufferCantidad,bufferPrecio,bufferCuit)==6 && flagFirstLine!=0)
             {
                 id= atoi(bufferId);
-                strcpy(fecha,bufferFecha);
-                strcpy(codigo,bufferCodigo);
+                if(utn_validSlashFecha(fecha)==0){
+                    strcpy(fecha,bufferFecha);
+                }
+
+                if(utn_isValidProduct(codigo)==0){
+                    strcpy(codigo,bufferCodigo);
+                }
+
                 cantidad=atoi(bufferCantidad);
                 precio=atof(bufferPrecio);
                 cuit=atoi(bufferCuit);
 
+
                 auxVenta=Venta_newConParametros(id,fecha,codigo,cantidad,precio,cuit);
                 char* prod;
                 Venta_getCodigoProd(auxVenta,prod);
-                printf("%d \n",id);
                 ll_add(pArrayListVenta,auxVenta);
 
             }
