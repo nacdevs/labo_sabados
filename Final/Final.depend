@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1544740589 source:/home/alumno/Nestor/Final/Envio.c
+	"Envio.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1544745739 /home/alumno/Nestor/Final/Envio.h
+
+1544746741 source:/home/alumno/Nestor/Final/func.c
+	<stdio.h>
+	<stdlib.h>
+	"Envio.h"
+	"LinkedList.h"
+
+1544741340 /home/alumno/Nestor/Final/LinkedList.h
+
+1544740860 source:/home/alumno/Nestor/Final/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1544745813 /home/alumno/Nestor/Final/Funciones.h
+
+1544745842 source:/home/alumno/Nestor/Final/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1544748185 source:/home/alumno/Nestor/Final/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.c"
+	"Parser.c"
+
+1544746498 /home/alumno/Nestor/Final/Controller.h
+	"LinkedList.h"
+	"Envio.h"
+
+1544747762 /home/alumno/Nestor/Final/Controller.c
+	<stdio.h>
+	<stdlib.h>
+	"Envio.h"
+
+1544747029 /home/alumno/Nestor/Final/Parser.c
+	<stdio.h>
+	<stdlib.h>
+	"Envio.h"
+
