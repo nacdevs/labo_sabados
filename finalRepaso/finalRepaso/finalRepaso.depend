@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1550454623 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/Envio.c
+	"Envio.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1550454746 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/Envio.h
+
+1550458369 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/func.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Envio.h"
+	"Parser.h"
+
+1549850547 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/LinkedList.h
+
+1549844736 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1549844736 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/Funciones.h
+
+1549844736 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1550458286 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"func.h"
+
+1550456161 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/Parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Envio.h"
+
+1550454927 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/Parser.h
+
+1550457757 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/finalRepaso/finalRepaso/func.h
+

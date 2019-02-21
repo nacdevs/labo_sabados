@@ -62,7 +62,7 @@ int fn_sumaMayor1(void* venta){
 
 
 /** \brief Verifica que la venta sea por un precio mayor de $20000
- *
+ *  
  * \param void* venta Venta a analizar
  * \return Person* Retorna 0 en error o en caso contrario 1
  *

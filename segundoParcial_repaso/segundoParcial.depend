@@ -1,0 +1,62 @@
+# depslib dependency file v1.0
+1549844736 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1549844736 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/Funciones.h
+
+1549844736 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1549850547 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/LinkedList.h
+
+1549850814 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Informe.h"
+	"func.h"
+
+1549853079 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/func.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"func.h"
+	"Venta.h"
+	"Parser.h"
+
+1549849694 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/func.h
+	"LinkedList.h"
+
+1549849787 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/Venta.h
+
+1549850591 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/Informe.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"func.h"
+
+1549853146 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/Parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Venta.h"
+
+1549852748 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/Parser.h
+
+1549849987 source:/home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/Venta.c
+	"Venta.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1549850470 /home/nest/Documents/Code_UTN /repaso febrero/labo_sabados/segundoParcial_repaso/Informe.h
+
