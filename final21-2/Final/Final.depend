@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1550785532 source:/home/alumno/Documentos/final/Final/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1550785532 /home/alumno/Documentos/final/Final/Funciones.h
+
+1550785532 source:/home/alumno/Documentos/final/Final/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1550785532 /home/alumno/Documentos/final/Final/LinkedList.h
+
+1550786320 source:/home/alumno/Documentos/final/Final/Empleado.c
+	"Empleado.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1550790527 /home/alumno/Documentos/final/Final/Empleado.h
+
+1550793491 source:/home/alumno/Documentos/final/Final/func.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Empleado.h"
+	"fichajes.h"
+
+1550785532 /home/alumno/Documentos/final/Final/Parser.h
+
+1550793457 source:/home/alumno/Documentos/final/Final/Parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Empleado.h"
+	"fichajes.h"
+
+1550794084 source:/home/alumno/Documentos/final/Final/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Empleado.h"
+	"LinkedList.h"
+	"func.h"
+
+1550793658 /home/alumno/Documentos/final/Final/func.h
+
+1550791117 /home/alumno/Documentos/final/Final/fichajes.h
+
+1550791067 source:/home/alumno/Documentos/final/Final/fichajes.c
+	"fichajes.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

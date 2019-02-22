@@ -1,0 +1,7 @@
+typedef struct {
+    int id;
+    char nombre [75];
+    char apellido [75];
+    int dni;
+    char clave [75];
+}Empleado;
