@@ -59,3 +59,63 @@
 	<stdlib.h>
 	<string.h>
 
+1567884362 source:/home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/Empleado.c
+	"Empleado.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1567884362 /home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/Empleado.h
+
+1567884362 source:/home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/fichajes.c
+	"fichajes.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1567884362 /home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/fichajes.h
+
+1567884362 source:/home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/func.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Empleado.h"
+	"fichajes.h"
+
+1567884362 /home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/LinkedList.h
+
+1567884362 /home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/Parser.h
+
+1567884362 source:/home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1567884362 /home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/Funciones.h
+
+1567884362 source:/home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1567884362 source:/home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Empleado.h"
+	"LinkedList.h"
+	"func.h"
+
+1567884362 /home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/func.h
+
+1567884362 source:/home/nestor/Documents/Workspace/C code/labo_sabados/final21-2/Final/Parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Empleado.h"
+	"fichajes.h"
+

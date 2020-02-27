@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1582830857 source:/home/nestor/Documents/Workspace/tp_labo1/Final20/func.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Struct.h"
+	"fichajes.h"
+
+1567884362 /home/nestor/Documents/Workspace/tp_labo1/Final20/LinkedList.h
+
+1567884362 /home/nestor/Documents/Workspace/tp_labo1/Final20/Parser.h
+
+1582687050 /home/nestor/Documents/Workspace/tp_labo1/Final20/Struct.h
+
+1567884362 source:/home/nestor/Documents/Workspace/tp_labo1/Final20/Funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Funciones.h"
+
+1567884362 /home/nestor/Documents/Workspace/tp_labo1/Final20/Funciones.h
+
+1567884362 source:/home/nestor/Documents/Workspace/tp_labo1/Final20/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1582802394 source:/home/nestor/Documents/Workspace/tp_labo1/Final20/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Struct.h"
+	"LinkedList.h"
+	"func.h"
+
+1582687137 /home/nestor/Documents/Workspace/tp_labo1/Final20/func.h
+
+1567884362 source:/home/nestor/Documents/Workspace/tp_labo1/Final20/fichajes.c
+	"fichajes.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1567884362 /home/nestor/Documents/Workspace/tp_labo1/Final20/fichajes.h
+
+1582803675 source:/home/nestor/Documents/Workspace/tp_labo1/Final20/Parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Parser.h"
+	"Struct.h"
+	"fichajes.h"
+
+1582684911 source:/home/nestor/Documents/Workspace/tp_labo1/Final20/Struct.c
+	"Struct.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
